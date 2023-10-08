@@ -2,6 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [password, setPassword] = useState('');
+  const [passwordLength, setPasswordLength] = useState(8); // I've kept default length of password as 8
+  const [includeUpperCase, setIncludeUpperCase] = useState(false);
+  const [includeLowerCase, setIncludeLowerCase] = useState(false);
+  const [includeNumbers, setIncludeNumbers] = useState(false);
+  const [includeSymbols, setIncludeSymbols] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
